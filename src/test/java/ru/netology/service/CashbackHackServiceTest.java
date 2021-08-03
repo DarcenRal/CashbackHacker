@@ -5,58 +5,63 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CashbackHackServiceTest {
-    CashbackHackServiceTest service = new CashbackHackServiceTest();
+
 
     @Test
     public void shouldAmount1000() {
-        int amount = 1000;
-        int actual = service.remain(amount);
+        CashbackHackServiceTest service = new CashbackHackServiceTest();
+
+        int actual = service.remain(1000);
         int expected = 0;
         assertEquals(expected, actual);
     }
 
-    private int remain(int amount) {
-        return amount;
+    private int remain(int i) {
     }
+
 
     @Test
     public void shouldAmount0() {
-        int amount = 0;
-        int actual = service.remain(amount);
+        CashbackHackServiceTest service = new CashbackHackServiceTest();
+
+        int actual = service.remain(0);
         int expected = 1000;
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldAmount850() {
-        int amount = 850;
-        int actual = service.remain(amount);
+        CashbackHackServiceTest service = new CashbackHackServiceTest();
+
+        int actual = service.remain(850);
         int expected = 150;
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldAmount1001() {
-        int amount = 1001;
-        int actual = service.remain(amount);
+        CashbackHackServiceTest service = new CashbackHackServiceTest();
+
+        int actual = service.remain(1001);
         int expected = 999;
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldAmount999() {
-        int amount = 0;
-        int actual = service.remain(amount);
+        CashbackHackServiceTest service = new CashbackHackServiceTest();
+
+        int actual = service.remain(999);
         int expected = 1;
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldAmount1100() {
-        int amount = 1100;
-        int actual = service.remain(amount);
+        CashbackHackServiceTest service = new CashbackHackServiceTest();
+
+        int actual = service.remain(1100);
         int expected = 900;
         assertEquals(expected, actual);
     }
-
 }
