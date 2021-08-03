@@ -59,4 +59,3 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-}
