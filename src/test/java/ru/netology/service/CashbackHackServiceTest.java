@@ -15,6 +15,9 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
+    private int remain(int amount) {
+    }
+
     @Test
     public void shouldAmount0() {
         int amount = 0;
