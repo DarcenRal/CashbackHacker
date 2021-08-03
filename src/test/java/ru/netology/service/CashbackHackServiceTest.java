@@ -16,6 +16,7 @@ public class CashbackHackServiceTest {
     }
 
     private int remain(int amount) {
+        return amount;
     }
 
     @Test
